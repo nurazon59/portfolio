@@ -1,11 +1,15 @@
 ---
+import type { lang } from '../env';
+
 interface Props {
 	title: string;
 	body: string;
 	href: string;
+	img: string;
+	langs: lang[];
 }
 
-const { href, title, body } = Astro.props;
+const { href, title, body, img, langs } = Astro.props;
 ---
 
 <li class="link-card">
@@ -17,12 +21,19 @@ const { href, title, body } = Astro.props;
 		<p>
 			{body}
 		</p>
+		<div class="langs">
+			{langs.map((lang) => (
+				<img src={lang.img} alt={lang.name} />
+			))}
+		</div>
 	</a>
 </li>
+
 <style>
 	.link-card {
 		list-style: none;
 		display: flex;
+		flex-direction: column;
 		padding: 1px;
 		background-color: #23262d;
 		background-image: none;
@@ -43,8 +54,11 @@ const { href, title, body } = Astro.props;
 		opacity: 0.8;
 	}
 	h2 {
-		margin: 0;
+		justify-content: center;
+		align-items: center;
 		font-size: 1.25rem;
+		font-weight: bold;
+		color: #fff;
 		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 	}
 	p {
@@ -57,5 +71,10 @@ const { href, title, body } = Astro.props;
 	}
 	.link-card:is(:hover, :focus-within) h2 {
 		color: rgb(var(--accent-light));
+	}
+	.langs {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
 	}
 </style>

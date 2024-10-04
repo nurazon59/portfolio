@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import { projects } from '../data/projects';
+---
+
+<Layout title="Projects">
+  <h1>Projects</h1>
+  <ul role="list" class="link-card-grid">
+		{projects.map((project) => (
+			<Card
+				href={project.href}
+				title={project.title}
+				body={project.body}
+				img={project.img}
+				langs={project.langs}
+			/>
+		))}
+	</ul>
+</Layout>
