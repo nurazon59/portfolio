@@ -18,4 +18,9 @@ export const history: {
     body: "sky株式会社でインターンシップに参加",
     place: "internship",
   },
+  {
+    time: "2024年9月",
+    body: "株式会社アルゴ式でインターンシップに参加",
+    place: "internship",
+  },
 ];

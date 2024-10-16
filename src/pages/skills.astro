@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Chart from '../components/AtcoderGraph.tsx';
+---
+
+<Layout title="Skills">
+  <h2 class="text-gradient">Skills</h2>
+  <ul class="skills-list">
+    <li>JavaScript</li>
+    <li>TypeScript</li>
+    <li>React</li>
+    <li>Next.js</li>
+    <li>Astro</li>
+    <li>C++</li>
+  </ul>
+
+  <div class="github-cards">
+    <div class="card">
+      <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Itsuki54&theme=2077&count_private=true" alt="Profile Details" />
+    </div>
+    <div class="card">
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Itsuki54&layout=compact&theme=tokyonight&count_private=true" alt="Top Languages Card" />
+    </div>
+    <div class="card">
+      <img src="https://github-readme-stats.vercel.app/api?username=Itsuki54&theme=tokyonight&count_private=true" alt="GitHub Stats Card" />
+    </div>
+    <div class="card">
+      <a href="https://github-profile-trophy.vercel.app/?username=Itsuki54&theme=onedark&count_private=true">
+        <img src="https://github-profile-trophy.vercel.app/?username=Itsuki54&theme=onedark&count_private=true" alt="Trophy" />
+      </a>
+    </div>
+  </div>
+    <h2 class="text-gradient">AtCoder Stats</h2>
+  <div class="atcoder-stats">
+   <Chart client:only/>
+  </div>
+</Layout>
+
+<style>
+  .text-gradient {
+    background: linear-gradient(to right, #f9d423, #ff4e50);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+    gap: 1.5rem;
+  }
+
+  .skills-list li {
+    background: rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+    color: #fff;
+    transition: transform 0.3s, background-color 0.3s;
+    backdrop-filter: blur(10px);
+  }
+
+  .skills-list li:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: #f9d423;
+    transform: translateY(-10px);
+    box-shadow: 0 4px 15px rgba(249, 212, 35, 0.5);
+  }
+
+  .atcoder-stats {
+    text-align: center;
+    margin-top: 2rem;
+    color: white;
+  }
+
+  .github-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    margin-top: 3rem;
+  }
+
+  .github-cards .card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .github-cards .card img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .github-cards .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
+  }
+
+  @media (max-width: 768px) {
+    .github-cards {
+      grid-template-columns: 1fr;
+    }
+
+    .skills-list li {
+      font-size: 1.2rem;
+      padding: 0.8rem 1.5rem;
+    }
+  }
+</style>
