@@ -20,7 +20,7 @@ export const projects = [
     ],
   },
   {
-    href: "https://itk-koshiishi.net",
+    href: "https://github.com/Itsuki54/portfolio",
     title: "itk-koshiishi.net",
     body: "My personal website.",
     img: "https://itk-koshiishi.net/img/ogp.png",
