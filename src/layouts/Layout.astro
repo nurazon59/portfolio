@@ -24,3 +24,39 @@ const { title, description } = Astro.props;
 		<slot />
 	</body>
 </html>
+
+<style is:global>
+	@font-face {
+		font-family: '0xproto';
+		src: url('/fonts/0xproto.woff2') format('woff2');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	:root {
+		--accent: 136, 58, 234;
+		--accent-light: 224, 204, 250;
+		--accent-dark: 49, 10, 101;
+		--accent-gradient: linear-gradient(
+			45deg,
+			rgb(var(--accent)),
+			rgb(var(--accent-light)) 30%,
+			white 60%
+		);
+	}
+	html {
+		font-family: '0xproto', sans-serif;
+		background: #13151a;
+		min-height: 100vh;
+	}
+	body {
+		margin: 16px;
+		padding: 1px;
+		display: flex;
+		flex-direction: column;
+	}
+	code {
+		font-family: '0xproto', monospace;
+	}
+</style>
