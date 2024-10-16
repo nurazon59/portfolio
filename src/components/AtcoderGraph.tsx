@@ -11,7 +11,13 @@ import {
 } from "recharts";
 import { contests } from "../data/contest";
 
-const CustomTooltip = ({ active, payload }: { active?: boolean; payload?: any; }) => {
+const CustomTooltip = ({
+  active,
+  payload,
+}: {
+  active?: boolean;
+  payload?: any[];
+}) => {
   if (active && payload && payload.length) {
     const { contest_name, rank, submissions } = payload[0].payload;
 
@@ -42,10 +48,13 @@ const tooltipStyle = {
   boxShadow: "0 2px 10px rgba(0, 0, 0, 0.5)",
 };
 
-export default () => (
+export const AtcoderGraph = () => (
   <div style={{ display: "flex", justifyContent: "center" }}>
     <ResponsiveContainer width="90%" height={400}>
-      <LineChart data={contests} style={{ backgroundColor: "#282c34", borderRadius: "10px" }}>
+      <LineChart
+        data={contests}
+        style={{ backgroundColor: "#282c34", borderRadius: "10px" }}
+      >
         <CartesianGrid strokeDasharray="3 3" stroke="#555" />
         <XAxis dataKey="date" tick={{ fill: "white" }} />
         <YAxis domain={[0, 1200]} tick={{ fill: "white" }} />

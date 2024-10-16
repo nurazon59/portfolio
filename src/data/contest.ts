@@ -1,7 +1,8 @@
 export const contests = [
   {
     date: "2022-04-23 22:40:00+0900",
-    contest_name: "Monoxer Programming Contest 2022（AtCoder Beginner Contest 249）",
+    contest_name:
+      "Monoxer Programming Contest 2022（AtCoder Beginner Contest 249）",
     rank: "6488",
     submissions: "51",
     rating: "3",
@@ -15,14 +16,16 @@ export const contests = [
   },
   {
     date: "2023-04-15 22:40:00+0900",
-    contest_name: "TOYOTA MOTOR CORPORATION Programming Contest 2023#1 (AtCoder Beginner Contest 298)",
+    contest_name:
+      "TOYOTA MOTOR CORPORATION Programming Contest 2023#1 (AtCoder Beginner Contest 298)",
     rank: "7174",
     submissions: "-",
     rating: "-",
   },
   {
     date: "2023-06-03 23:00:00+0900",
-    contest_name: "Tokio Marine & Nichido Fire Insurance Programming Contest 2023（AtCoder Beginner Contest 304)",
+    contest_name:
+      "Tokio Marine & Nichido Fire Insurance Programming Contest 2023（AtCoder Beginner Contest 304)",
     rank: "6750",
     submissions: "-",
     rating: "-",
@@ -36,28 +39,32 @@ export const contests = [
   },
   {
     date: "2023-07-15 22:40:00+0900",
-    contest_name: "freee Programming Contest 2023（AtCoder Beginner Contest 310）",
+    contest_name:
+      "freee Programming Contest 2023（AtCoder Beginner Contest 310）",
     rank: "8453",
     submissions: "478",
     rating: "62",
   },
   {
     date: "2023-10-28 22:40:00+0900",
-    contest_name: "Panasonic Programming Contest 2023（AtCoder Beginner Contest 326）",
+    contest_name:
+      "Panasonic Programming Contest 2023（AtCoder Beginner Contest 326）",
     rank: "7357",
     submissions: "258",
     rating: "83",
   },
   {
     date: "2023-11-25 22:40:00+0900",
-    contest_name: "TOYOTA SYSTEMS Programming Contest 2023(AtCoder Beginner Contest 330)",
+    contest_name:
+      "TOYOTA SYSTEMS Programming Contest 2023(AtCoder Beginner Contest 330)",
     rank: "5655",
     submissions: "409",
     rating: "114",
   },
   {
     date: "2023-12-09 23:00:00+0900",
-    contest_name: "estie Programming Contest 2023 (AtCoder Regular Contest 169)",
+    contest_name:
+      "estie Programming Contest 2023 (AtCoder Regular Contest 169)",
     rank: "1711",
     submissions: "393",
     rating: "142",
@@ -78,7 +85,8 @@ export const contests = [
   },
   {
     date: "2024-01-20 22:40:00+0900",
-    contest_name: "Toyota Programming Contest 2024#1（AtCoder Beginner Contest 337）",
+    contest_name:
+      "Toyota Programming Contest 2024#1（AtCoder Beginner Contest 337）",
     rank: "7546",
     submissions: "382",
     rating: "229",
@@ -99,42 +107,48 @@ export const contests = [
   },
   {
     date: "2024-02-03 22:40:00+0900",
-    contest_name: "Japan Registry Services (JPRS) Programming Contest 2024 (AtCoder Beginner Contest 339)",
+    contest_name:
+      "Japan Registry Services (JPRS) Programming Contest 2024 (AtCoder Beginner Contest 339)",
     rank: "5655",
     submissions: "600",
     rating: "294",
   },
   {
     date: "2024-02-10 22:40:00+0900",
-    contest_name: "KAJIMA CORPORATION CONTEST 2024（AtCoder Beginner Contest 340）",
+    contest_name:
+      "KAJIMA CORPORATION CONTEST 2024（AtCoder Beginner Contest 340）",
     rank: "4677",
     submissions: "629",
     rating: "331",
   },
   {
     date: "2024-02-17 22:40:00+0900",
-    contest_name: "Toyota Programming Contest 2024#2（AtCoder Beginner Contest 341）",
+    contest_name:
+      "Toyota Programming Contest 2024#2（AtCoder Beginner Contest 341）",
     rank: "6396",
     submissions: "458",
     rating: "345",
   },
   {
     date: "2024-02-24 22:40:00+0900",
-    contest_name: "HUAWEI Programming Contest 2024（AtCoder Beginner Contest 342）",
+    contest_name:
+      "HUAWEI Programming Contest 2024（AtCoder Beginner Contest 342）",
     rank: "4149",
     submissions: "773",
     rating: "399",
   },
   {
     date: "2024-03-09 22:40:00+0900",
-    contest_name: "Toyota Programming Contest 2024#3（AtCoder Beginner Contest 344）",
+    contest_name:
+      "Toyota Programming Contest 2024#3（AtCoder Beginner Contest 344）",
     rank: "1498",
     submissions: "1376",
     rating: "561",
   },
   {
     date: "2024-03-23 22:40:00+0900",
-    contest_name: "UNIQUE VISION Programming Contest 2024 Spring(AtCoder Beginner Contest 346)",
+    contest_name:
+      "UNIQUE VISION Programming Contest 2024 Spring(AtCoder Beginner Contest 346)",
     rank: "4363",
     submissions: "776",
     rating: "587",
@@ -148,7 +162,8 @@ export const contests = [
   },
   {
     date: "2024-09-21 22:40:00+0900",
-    contest_name: "UNIQUE VISION Programming Contest 2024 Autumn (AtCoder Beginner Contest 372)",
+    contest_name:
+      "UNIQUE VISION Programming Contest 2024 Autumn (AtCoder Beginner Contest 372)",
     rank: "5211",
     submissions: "563",
     rating: "690",
@@ -162,7 +177,8 @@ export const contests = [
   },
   {
     date: "2024-10-05 22:40:00+0900",
-    contest_name: "KEYENCE Programming Contest 2024（AtCoder Beginner Contest 374）",
+    contest_name:
+      "KEYENCE Programming Contest 2024（AtCoder Beginner Contest 374）",
     rank: "4549",
     submissions: "787",
     rating: "677",
