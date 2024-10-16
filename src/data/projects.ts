@@ -19,4 +19,20 @@ export const projects = [
       },
     ],
   },
+  {
+    href: "https://itk-koshiishi.net",
+    title: "itk-koshiishi.net",
+    body: "My personal website.",
+    img: "https://itk-koshiishi.net/img/ogp.png",
+    langs: [
+      {
+        name: "Astro",
+        img: "https://img.shields.io/badge/Astro-000000?style=for-the-badge&logo=astro&logoColor=white",
+      },
+      {
+        name: "TypeScript",
+        img: "https://img.shields.io/badge/TypeScript-000000?style=for-the-badge&logo=typescript&logoColor=white",
+      },
+    ],
+  },
 ];
