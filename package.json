@@ -9,7 +9,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "dprint fmt",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "scrap": "ts-node --esm src/lib/scraping.ts"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.3",
@@ -21,7 +22,9 @@
     "astro": "^4.15.11",
     "axios": "^1.7.7",
     "chart.js": "^4.4.5",
+    "cheerio": "^1.0.0",
     "dprint": "^0.47.2",
+    "fs": "^0.0.1-security",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "recharts": "^2.13.0",
@@ -38,6 +41,7 @@
     "eslint-plugin-react": "^7.37.1",
     "globals": "^15.11.0",
     "prettier": "^3.3.3",
+    "ts-node": "^10.9.2",
     "typescript-eslint": "^8.9.0"
   }
 }
