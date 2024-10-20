@@ -26,12 +26,4 @@ jobs:
       - name: Run scraping script
         run: node src/lib/scraping.js
 
-      - name: Commit and Push
-        id: git_update
-        continue-on-error: true
-        run: |
-          git config --global user.email " 41898282+github-actions[bot]@users.noreply.github.com"
-          git config --global user.name "GitHub Actions"
-          git add .
-          git commit -m "Scraping data"
-          git push
+      - uses: stefanzweifel/git-auto-commit-action@v5
