@@ -166,5 +166,12 @@ export const contests = [
         "rank": "4549",
         "submissions": "787",
         "rating": "677"
+    },
+    {
+        "date": "2024-10-19 22:40:00+0900-15",
+        "contest_name": "AtCoder Beginner Contest 3766255",
+        "rank": "6255",
+        "submissions": "529",
+        "rating": "662"
     }
 ];
