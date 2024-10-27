@@ -173,5 +173,12 @@ export const contests = [
         "rank": "6255",
         "submissions": "529",
         "rating": "662"
+    },
+    {
+        "date": "2024-10-26 22:40:00+0900-",
+        "contest_name": "TOYOTA SYSTEMS Programming Contest 2024（AtCoder Beginner Contest 377)7819",
+        "rank": "7819",
+        "submissions": "-",
+        "rating": "-"
     }
 ];
