@@ -20,18 +20,18 @@ jobs:
 
       - name: Generate Profile Details Card
         run: |
-          curl -o profile-details.svg "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Itsuki54&theme=2077&count_private=true"
+          curl -o public/profile-details.svg "https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Itsuki54&theme=2077&count_private=true"
 
       - name: Generate Top Languages Card
         run: |
-          curl -o top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=Itsuki54&layout=compact&theme=tokyonight&count_private=true"
+          curl -o public/top-langs.svg "https://github-readme-stats.vercel.app/api/top-langs/?username=Itsuki54&layout=compact&theme=tokyonight&count_private=true"
 
       - name: Generate GitHub Stats Card
         run: |
-          curl -o github-stats.svg "https://github-readme-stats.vercel.app/api?username=Itsuki54&theme=tokyonight&count_private=true"
+          curl -o public/github-stats.svg "https://github-readme-stats.vercel.app/api?username=Itsuki54&theme=tokyonight&count_private=true"
 
       - name: Generate Trophy Card
         run: |
-          curl -o trophy.svg "https://github-profile-trophy.vercel.app/?username=Itsuki54&theme=onedark&count_private=true"
+          curl -o public/trophy.svg "https://github-profile-trophy.vercel.app/?username=Itsuki54&theme=onedark&count_private=true"
 
       - uses: stefanzweifel/git-auto-commit-action@v5
