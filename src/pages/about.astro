@@ -1,6 +1,6 @@
 ---
-import Layout from '../layouts/Layout.astro';
 import { history } from '../data/history';
+import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Itsuki54's Introduction" description='About Itsuki54 (輿石一輝)'>
@@ -115,7 +115,6 @@ import { history } from '../data/history';
   }
   .history {
     margin-top: 2rem;
-    text-align: left;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -126,20 +125,6 @@ import { history } from '../data/history';
     margin-bottom: 1rem;
     text-align: center;
   }
-  .timeline {
-    position: relative;
-    padding: 0;
-    list-style: none;
-  }
-  .timeline:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 200px;
-    width: 2px;
-    background: #fff;
-  }
   .event {
     position: relative;
     margin-bottom: 20px;
@@ -148,20 +133,14 @@ import { history } from '../data/history';
     content: '';
     position: absolute;
     top: 0;
-    left: 196px;
     width: 10px;
     height: 10px;
-    background: #fff;
     border-radius: 50%;
   }
   .timeline-content {
-    margin-left: 220px;
     padding: 10px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 5px;
-  }
-  .branch .timeline-content {
-    margin-left: 240px;
   }
   .timeline-content time {
     display: block;
