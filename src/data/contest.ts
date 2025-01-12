@@ -180,5 +180,12 @@ export const contests = [
         "rank": "7819",
         "submissions": "-",
         "rating": "-"
+    },
+    {
+        "date": "2025-01-11 22:40:00+0900-",
+        "contest_name": "HHKB Programming Contest 2025(AtCoder Beginner Contest 388)9548",
+        "rank": "9548",
+        "submissions": "-",
+        "rating": "-"
     }
 ];
