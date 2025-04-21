@@ -17,7 +17,7 @@
     "@astrojs/mdx": "^3.1.8",
     "@astrojs/sitemap": "^3.2.1",
     "@types/chart.js": "^2.9.41",
-    "@types/react": "^18.3.11",
+    "@types/react": "^19.1.2",
     "@types/react-dom": "^18.3.1",
     "astro": "^4.15.11",
     "axios": "^1.7.7",
