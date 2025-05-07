@@ -1,61 +1,13 @@
 <header>
-  <div class="header">
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/skills">Skills</a></li>
-        <li><a href="/projects">Projects</a></li>
-        <li><a href="/contact">Contact</a></li>
+  <div class="flex justify-center items-center px-4 flex-col md:flex-row">
+    <nav class="flex justify-center items-center px-4">
+      <ul class="flex justify-center items-center px-4 flex-col md:flex-row">
+        <li class="my-4 md:mx-4 md:my-0"><a href="/" class="no-underline text-white text-2xl font-bold hover:text-[#f9d423]">Home</a></li>
+        <li class="my-4 md:mx-4 md:my-0"><a href="/about" class="no-underline text-white text-2xl font-bold hover:text-[#f9d423]">About</a></li>
+        <li class="my-4 md:mx-4 md:my-0"><a href="/skills" class="no-underline text-white text-2xl font-bold hover:text-[#f9d423]">Skills</a></li>
+        <li class="my-4 md:mx-4 md:my-0"><a href="/projects" class="no-underline text-white text-2xl font-bold hover:text-[#f9d423]">Projects</a></li>
+        <li class="my-4 md:mx-4 md:my-0"><a href="/contact" class="no-underline text-white text-2xl font-bold hover:text-[#f9d423]">Contact</a></li>
       </ul>
     </nav>
   </div>
 </header>
-
-<style>
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-  }
-  .header-title {
-    font-size: 20px;
-    font-weight: bold;
-  }
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-  }
-  nav ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1rem;
-  }
-  nav ul li {
-    margin: 0 1rem;
-  }
-  nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  nav ul li a:hover {
-    color: #f9d423;
-  }
-  @media (max-width: 768px) {
-    .header {
-      flex-direction: column;
-    }
-    nav ul {
-      flex-direction: column;
-    }
-    nav ul li {
-      margin: 1rem 0;
-    }
-  }
-</style>

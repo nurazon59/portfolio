@@ -4,153 +4,39 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Itsuki54's Introduction" description='About Itsuki54 (輿石一輝)'>
-  <div class="container">
-  <div class="icon">
-  <img src="/icon-bg-green.jpg" alt="Itsuki54のアイコン画像" class="icon-image" />
-    <div class="description">
-      <h1>Itsuki54</h1>
-      <h2>
-        輿石一輝
-      </h2>
-      <p>
-        東京都立産業技術高等専門学校<br class="hidden-on-mobile">
-        情報システム工学コース 4年
-      </p>
-      <div class="sns">
-        <a href="https://github.com/Itsuki54">
-          <img src="/github-mark-white.svg" alt="GitHub" />
-        </a>
+  <div class="flex flex-col min-h-screen box-border p-8">
+    <div class="flex flex-col items-center justify-center mx-auto gap-8 max-w-[calc(100%-2rem)] md:flex-row md:gap-48">
+      <img src="/icon-bg-green.jpg" alt="Itsuki54のアイコン画像" class="w-[200px] h-[200px] rounded-full md:w-[500px] md:h-[500px]" />
+      <div class="flex flex-col items-center justify-center mx-auto">
+        <h1 class="text-white text-center text-3xl mb-4 md:text-5xl">Itsuki54</h1>
+        <h2 class="text-white text-center text-2xl mb-4 md:text-3xl">
+          輿石一輝
+        </h2>
+        <p class="text-white text-center text-xl mb-4 md:text-2xl">
+          東京都立産業技術高等専門学校<br class="hidden md:block">
+          情報システム工学コース 4年
+        </p>
+        <div class="sns">
+          <a href="https://github.com/Itsuki54">
+            <img src="/github-mark-white.svg" alt="GitHub" class="w-20 h-20" />
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="history">
-    <h2>History</h2>
-    <ul class="timeline">
-      {
-        history.map((item) => (
-          <li class="event">
-            <div class="timeline-content">
-              <time>{item.time}</time>
-              <p>{item.body}</p>
-            </div>
-          </li>
-        ))
-      }
-    </ul>
-  </div>
+    <div class="mt-8 max-w-[800px] mx-auto">
+      <h2 class="text-white text-2xl mb-4 text-center">History</h2>
+      <ul>
+        {
+          history.map((item) => (
+            <li class="relative mb-5">
+              <div class="p-3 bg-white/10 rounded">
+                <time class="block font-bold mb-1 text-[#ddd]">{item.time}</time>
+                <p class="m-0 text-white text-base">{item.body}</p>
+              </div>
+            </li>
+          ))
+        }
+      </ul>
+    </div>
   </div>
 </Layout>
-
-<style>
-  .container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    box-sizing: border-box;
-    padding: 2rem;
-  }
-  .icon {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    gap: 2rem;
-    max-width: calc(100% - 2rem);
-  }
-  .icon-image {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-  }
-  .container h1, .container h2, .container p {
-    color: white;
-    text-align: center;
-    margin-bottom: 1em;
-  }
-  .container h1 {
-    font-size: 3rem;
-  }
-  .container h2 {
-    font-size: 2rem;
-  }
-  .container p {
-    font-size: 1.5rem;
-  }
-  .description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-  }
-  .description img {
-    width: 80px;
-    height: 80px;
-  }
-  .hidden-on-mobile {
-    display: none;
-  }
-  @media (min-width: 768px) {
-    .hidden-on-mobile {
-      display: block;
-    }
-    .icon {
-      flex-direction: row;
-      gap: 12rem;
-    }
-    .icon-image {
-      width: 500px;
-      height: 500px;
-    }
-    .container h1 {
-      font-size: 5rem;
-    }
-    .container h2 {
-      font-size: 3rem;
-    }
-    .container p {
-      font-size: 2rem;
-    }
-  }
-  .history {
-    margin-top: 2rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .history h2 {
-    color: white;
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-  .event {
-    position: relative;
-    margin-bottom: 20px;
-  }
-  .event:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-  }
-  .timeline-content {
-    padding: 10px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 5px;
-  }
-  .timeline-content time {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #ddd;
-  }
-  .timeline-content p {
-    margin: 0;
-    color: white;
-    font-size: 1rem;
-  }
-</style>
