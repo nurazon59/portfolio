@@ -5,18 +5,18 @@ import Layout from '../layouts/Layout.astro';
 
 <Layout title="Itsuki54's Introduction" description='About Itsuki54 (輿石一輝)'>
   <div class="flex flex-col min-h-screen box-border p-8">
-    <div class="flex flex-col items-center justify-center mx-auto gap-8 max-w-[calc(100%-2rem)] md:flex-row md:gap-48">
-      <img src="/icon-bg-green.jpg" alt="Itsuki54のアイコン画像" class="w-[200px] h-[200px] rounded-full md:w-[500px] md:h-[500px]" />
+    <div class="flex flex-col md:flex-row items-center justify-center mx-auto gap-8 md:gap-48 max-w-full">
+      <img src="/icon-bg-green.jpg" alt="Itsuki54のアイコン画像" class="w-[200px] h-[200px] md:w-[500px] md:h-[500px] rounded-full" />
       <div class="flex flex-col items-center justify-center mx-auto">
-        <h1 class="text-white text-center text-3xl mb-4 md:text-5xl">Itsuki54</h1>
-        <h2 class="text-white text-center text-2xl mb-4 md:text-3xl">
+        <h1 class="text-white text-center text-3xl md:text-5xl mb-4">Itsuki54</h1>
+        <h2 class="text-white text-center text-2xl md:text-3xl mb-4">
           輿石一輝
         </h2>
-        <p class="text-white text-center text-xl mb-4 md:text-2xl">
+        <p class="text-white text-center text-xl md:text-2xl mb-4">
           東京都立産業技術高等専門学校<br class="hidden md:block">
           情報システム工学コース 4年
         </p>
-        <div class="sns">
+        <div class="flex items-center">
           <a href="https://github.com/Itsuki54">
             <img src="/github-mark-white.svg" alt="GitHub" class="w-20 h-20" />
           </a>
@@ -29,8 +29,8 @@ import Layout from '../layouts/Layout.astro';
         {
           history.map((item) => (
             <li class="relative mb-5">
-              <div class="p-3 bg-white/10 rounded">
-                <time class="block font-bold mb-1 text-[#ddd]">{item.time}</time>
+              <div class="p-2.5 bg-white/10 rounded">
+                <time class="block font-bold mb-1.5 text-[#ddd]">{item.time}</time>
                 <p class="m-0 text-white text-base">{item.body}</p>
               </div>
             </li>

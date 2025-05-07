@@ -3,15 +3,15 @@ import Header from './Header.astro';
 import '../styles/global.css';
 
 interface Props {
-	title: string;
-	description: string;
+        title: string;
+        description: string;
 }
 
 const { title, description } = Astro.props;
 ---
 
 <!doctype html>
-<html lang="en" class="font-['0xproto'] bg-[#13151a] min-h-screen">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="description" content={description} />
@@ -27,8 +27,8 @@ const { title, description } = Astro.props;
   <title>{title}</title>
   <link rel="preload" href="/fonts/0xproto.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
 </head>
-	<body class="mx-4 p-[1px] flex flex-col">
-		<Header />
-		<slot />
-	</body>
+        <body>
+                <Header />
+                <slot />
+        </body>
 </html>
