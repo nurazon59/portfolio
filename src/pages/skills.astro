@@ -1,121 +1,35 @@
 ---
-import { AtcoderGraph } from '../components/AtcoderGraph.tsx';
+import { AtcoderGraph } from '../components/atcoder-graph.tsx';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Itsuki54's Skills" description="Showcasing the skill set of Itsuki54 and AtCoder statistics.">
-  <h2 class="text-gradient">Skills</h2>
-  <ul class="skills-list">
-    <li>JavaScript</li>
-    <li>TypeScript</li>
-    <li>React</li>
-    <li>Next.js</li>
-    <li>Astro</li>
-    <li>C++</li>
+  <h2 class="bg-gradient-to-r from-[#f9d423] to-[#ff4e50] bg-clip-text text-transparent text-5xl text-center mb-8 font-semibold">Skills</h2>
+  <ul class="flex flex-wrap justify-center list-none p-0 gap-6">
+    <li class="bg-black/20 border-2 border-white/30 rounded-xl p-4 px-8 text-2xl text-white transition-all duration-300 backdrop-blur-[10px] hover:bg-black/40 hover:border-[#f9d423] hover:-translate-y-2.5 hover:shadow-[0_4px_15px_rgba(249,212,35,0.5)]">JavaScript</li>
+    <li class="bg-black/20 border-2 border-white/30 rounded-xl p-4 px-8 text-2xl text-white transition-all duration-300 backdrop-blur-[10px] hover:bg-black/40 hover:border-[#f9d423] hover:-translate-y-2.5 hover:shadow-[0_4px_15px_rgba(249,212,35,0.5)]">TypeScript</li>
+    <li class="bg-black/20 border-2 border-white/30 rounded-xl p-4 px-8 text-2xl text-white transition-all duration-300 backdrop-blur-[10px] hover:bg-black/40 hover:border-[#f9d423] hover:-translate-y-2.5 hover:shadow-[0_4px_15px_rgba(249,212,35,0.5)]">React</li>
+    <li class="bg-black/20 border-2 border-white/30 rounded-xl p-4 px-8 text-2xl text-white transition-all duration-300 backdrop-blur-[10px] hover:bg-black/40 hover:border-[#f9d423] hover:-translate-y-2.5 hover:shadow-[0_4px_15px_rgba(249,212,35,0.5)]">Next.js</li>
+    <li class="bg-black/20 border-2 border-white/30 rounded-xl p-4 px-8 text-2xl text-white transition-all duration-300 backdrop-blur-[10px] hover:bg-black/40 hover:border-[#f9d423] hover:-translate-y-2.5 hover:shadow-[0_4px_15px_rgba(249,212,35,0.5)]">Astro</li>
+    <li class="bg-black/20 border-2 border-white/30 rounded-xl p-4 px-8 text-2xl text-white transition-all duration-300 backdrop-blur-[10px] hover:bg-black/40 hover:border-[#f9d423] hover:-translate-y-2.5 hover:shadow-[0_4px_15px_rgba(249,212,35,0.5)]">C++</li>
   </ul>
 
-  <div class="github-cards">
-    <div class="card">
-      <img src="../profile-details.svg" alt="Profile Details" />
+  <div class="grid grid-cols-2 gap-8 justify-items-center mt-12 md:grid-cols-1">
+    <div class="relative bg-white/10 rounded-[15px] overflow-hidden p-4 shadow-[0_4px_15px_rgba(0,0,0,0.2)] transition-all duration-300 max-w-full text-center hover:-translate-y-2.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.3)]">
+      <img src="../profile-details.svg" alt="Profile Details" class="max-w-full h-auto" />
     </div>
-    <div class="card">
-      <img src="../top-langs.svg" alt="Top Languages Card" />
+    <div class="relative bg-white/10 rounded-[15px] overflow-hidden p-4 shadow-[0_4px_15px_rgba(0,0,0,0.2)] transition-all duration-300 max-w-full text-center hover:-translate-y-2.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.3)]">
+      <img src="../top-langs.svg" alt="Top Languages Card" class="max-w-full h-auto" />
     </div>
-    <div class="card">
-      <img src="../github-stats.svg" alt="GitHub Stats Card" />
+    <div class="relative bg-white/10 rounded-[15px] overflow-hidden p-4 shadow-[0_4px_15px_rgba(0,0,0,0.2)] transition-all duration-300 max-w-full text-center hover:-translate-y-2.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.3)]">
+      <img src="../github-stats.svg" alt="GitHub Stats Card" class="max-w-full h-auto" />
     </div>
-    <div class="card">
-      <img src="../trophy.svg" alt="Trophy" />
+    <div class="relative bg-white/10 rounded-[15px] overflow-hidden p-4 shadow-[0_4px_15px_rgba(0,0,0,0.2)] transition-all duration-300 max-w-full text-center hover:-translate-y-2.5 hover:shadow-[0_6px_20px_rgba(255,255,255,0.3)]">
+      <img src="../trophy.svg" alt="Trophy" class="max-w-full h-auto" />
     </div>
   </div>
-    <h2 class="text-gradient">AtCoder Stats</h2>
-  <div class="atcoder-stats">
+  <h2 class="bg-gradient-to-r from-[#f9d423] to-[#ff4e50] bg-clip-text text-transparent text-5xl text-center mb-8 font-semibold">AtCoder Stats</h2>
+  <div class="text-center mt-8 text-white">
    <AtcoderGraph client:only/>
   </div>
 </Layout>
-
-<style>
-  .text-gradient {
-    background: linear-gradient(to right, #f9d423, #ff4e50);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 3rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    font-weight: 600;
-  }
-
-  .skills-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style-type: none;
-    padding: 0;
-    gap: 1.5rem;
-  }
-
-  .skills-list li {
-    background: rgba(0, 0, 0, 0.2);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 12px;
-    padding: 1rem 2rem;
-    font-size: 1.5rem;
-    color: #fff;
-    transition: transform 0.3s, background-color 0.3s;
-    backdrop-filter: blur(10px);
-  }
-
-  .skills-list li:hover {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-color: #f9d423;
-    transform: translateY(-10px);
-    box-shadow: 0 4px 15px rgba(249, 212, 35, 0.5);
-  }
-
-  .atcoder-stats {
-    text-align: center;
-    margin-top: 2rem;
-    color: white;
-  }
-
-  .github-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    justify-items: center;
-    margin-top: 3rem;
-  }
-
-  .github-cards .card {
-    position: relative;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 15px;
-    overflow: hidden;
-    padding: 1rem;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .github-cards .card img {
-    max-width: 100%;
-    height: auto;
-  }
-
-  .github-cards .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.3);
-  }
-
-  @media (max-width: 768px) {
-    .github-cards {
-      grid-template-columns: 1fr;
-    }
-
-    .skills-list li {
-      font-size: 1.2rem;
-      padding: 0.8rem 1.5rem;
-    }
-  }
-</style>
