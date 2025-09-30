@@ -12,7 +12,7 @@ export default {
         "accent-gradient": "linear-gradient(45deg, rgb(136, 58, 234), rgb(224, 204, 250) 30%, white 60%)",
       },
       fontFamily: {
-        "0xproto": ["0xproto", "monospace"],
+        "xproto": ["0xproto", "monospace"],
       },
     },
   },
