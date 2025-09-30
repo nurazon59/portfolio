@@ -13,7 +13,7 @@ axios.get(url)
 
     const dataList = [];
 
-    rows.each((index, row) => {
+    rows.each((_index, row) => {
       const date = $(row).find("td[data-order]").text().trim();
       const contestName = $(row).find("a").text().trim();
       const rank = $(row).find("td").eq(2).text().trim();
