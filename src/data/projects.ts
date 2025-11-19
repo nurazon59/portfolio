@@ -1,9 +1,9 @@
 export const projects = [
   {
-    href: "https://github.com/Itsuki54/kizino_niwa/",
+    href: "https://github.com/nurazon59/kizino_niwa/",
     title: "kizino_niwa",
     body: "Markdown 記事を作成・公開できるウェブサイト。",
-    img: "https://github.com/Itsuki54/kizino_niwa/blob/main/public/img/kizino_niwa.png?raw=true",
+    img: "https://github.com/nurazon59/kizino_niwa/blob/main/public/img/kizino_niwa.png?raw=true",
     langs: [
       {
         name: "Next.js",
@@ -20,7 +20,7 @@ export const projects = [
     ],
   },
   {
-    href: "https://github.com/Itsuki54/portfolio",
+    href: "https://github.com/nurazon59/portfolio",
     title: "itk-koshiishi.net",
     body: "個人用ポートフォリオサイト。",
     img: "https://itk-koshiishi.net/img/ogp.png",
@@ -56,10 +56,10 @@ export const projects = [
     ],
   },
   {
-    href: "https://github.com/Itsuki54/kizino_niwa/",
+    href: "https://github.com/nurazon59/kizino_niwa/",
     title: "kizino_niwa",
     body: "Markdown 記事の投稿・保存・いいね機能に加え、API連携によるマルチプラットフォーム投稿を可能にしたサービス。",
-    img: "https://github.com/Itsuki54/kizino_niwa/blob/main/public/img/kizino_niwa.png?raw=true",
+    img: "https://github.com/nurazon59/kizino_niwa/blob/main/public/img/kizino_niwa.png?raw=true",
     langs: [
       {
         name: "Next.js",
@@ -84,7 +84,7 @@ export const projects = [
     ],
   },
   {
-    href: "https://github.com/Itsuki54/arco-dev",
+    href: "https://github.com/nurazon59/arco-dev",
     title: "スマートバンド連携RPG",
     body: "歩数・心拍数・睡眠スコアによってキャラクターを育成できるRPG。ユーザー同士がすれ違うと対戦が発生し、報酬を獲得。",
     img: "",
@@ -103,7 +103,7 @@ export const projects = [
     href: "",
     title: "飲食店検索システム",
     body: "メニュー・内装・立地など多様な条件で飲食店を検索できるアプリ。店舗側が詳細情報を登録し、ユーザーが自由に検索可能。",
-    img: "`https://github.com/Itsuki54/restaurant-finder/blob/main/public/img/app.png?raw=true`",
+    img: "`https://github.com/nurazon59/restaurant-finder/blob/main/public/img/app.png?raw=true`",
     langs: [
       {
         name: "Next.js",
@@ -128,7 +128,7 @@ export const projects = [
     ],
   },
   {
-    href: "https://github.com/Itsuki54/halt",
+    href: "https://github.com/nurazon59/halt",
     title: "AIカウンセリングアプリ",
     body: "多様な性格を持つAIカウンセラーとチャットや音声通話で相談ができるアプリ。メンタルヘルスの改善を目的とした設計。",
     img: "",
