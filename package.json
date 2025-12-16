@@ -9,8 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "format": "dprint fmt",
-    "lint": "eslint . --ext .ts,.tsx",
-    "scrap": "ts-node --esm src/lib/scraping.ts"
+    "lint": "eslint . --ext .ts,.tsx"
   },
   "dependencies": {
     "@astrojs/check": "^0.9.6",
@@ -23,7 +22,6 @@
     "chart.js": "^4.5.1",
     "cheerio": "^1.1.2",
     "dprint": "^0.50.2",
-    "fs": "0.0.1-security",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "recharts": "^3.6.0",
@@ -43,7 +41,6 @@
     "jiti": "^2.6.1",
     "prettier": "^3.7.4",
     "tailwindcss": "^3.4.19",
-    "ts-node": "^10.9.2",
     "typescript-eslint": "^8.50.0"
   },
   "packageManager": "pnpm@9.15.5"
