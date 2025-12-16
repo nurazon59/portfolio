@@ -46,7 +46,8 @@
     "internal/**",
     "**/*.generated.*",
     "scripts/*.d.*",
-    "**/_namespaces/**"
+    "**/_namespaces/**",
+    "pnpm-lock.yaml"
   ],
   "plugins": [
     "https://plugins.dprint.dev/typescript-0.91.8.wasm",
