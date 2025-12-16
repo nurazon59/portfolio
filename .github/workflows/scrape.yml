@@ -2,7 +2,7 @@ name: Weekly Scraping Job
 
 on:
   schedule:
-    # - cron: '0 3 * * 0'
+  # - cron: '0 3 * * 0'
   push:
     branches:
       - main
