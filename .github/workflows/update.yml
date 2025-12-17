@@ -34,4 +34,4 @@ jobs:
         run: |
           curl -o public/trophy.svg "https://github-profile-trophy.vercel.app/?username=nurazon59&theme=onedark&count_private=true"
 
-      - uses: stefanzweifel/git-auto-commit-action@v5
+      - uses: stefanzweifel/git-auto-commit-action@v7
