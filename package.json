@@ -21,7 +21,7 @@
     "axios": "^1.13.2",
     "chart.js": "^4.5.1",
     "cheerio": "^1.1.2",
-    "dprint": "^0.50.2",
+    "dprint": "^0.51.0",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "recharts": "^3.6.0",
