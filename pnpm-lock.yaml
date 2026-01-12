@@ -13,7 +13,7 @@ importers:
         version: 0.9.6(prettier@3.7.4)(typescript@5.9.3)
       '@astrojs/mdx':
         specifier: ^4.3.13
-        version: 4.3.13(astro@5.16.8(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2))
+        version: 4.3.13(astro@5.16.9(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2))
       '@astrojs/sitemap':
         specifier: ^3.6.0
         version: 3.6.1
@@ -25,7 +25,7 @@ importers:
         version: 19.2.3(@types/react@19.2.8)
       astro:
         specifier: ^5.16.6
-        version: 5.16.8(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2)
+        version: 5.16.9(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2)
       axios:
         specifier: ^1.13.2
         version: 1.13.2
@@ -62,7 +62,7 @@ importers:
         version: 4.4.2(@types/node@25.0.3)(@types/react-dom@19.2.3(@types/react@19.2.8))(@types/react@19.2.8)(jiti@2.6.1)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)(yaml@2.8.2)
       '@astrojs/tailwind':
         specifier: ^6.0.2
-        version: 6.0.2(astro@5.16.8(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))(ts-node@10.9.2(@types/node@25.0.3)(typescript@5.9.3))
+        version: 6.0.2(astro@5.16.9(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))(ts-node@10.9.2(@types/node@25.0.3)(typescript@5.9.3))
       '@eslint/js':
         specifier: ^9.39.2
         version: 9.39.2
@@ -1200,8 +1200,8 @@ packages:
     resolution: {integrity: sha512-LElXdjswlqjWrPpJFg1Fx4wpkOCxj1TDHlSV4PlaRxHGWko024xICaa97ZkMfs6DRKlCguiAI+rbXv5GWwXIkg==}
     hasBin: true
 
-  astro@5.16.8:
-    resolution: {integrity: sha512-gzZE+epuCrNuxOa8/F1dzkllDOFvxWhGeobQKeBRIAef5sUpUKMHZo/8clse+02rYnKJCgwXBgjW4uTu9mqUUw==}
+  astro@5.16.9:
+    resolution: {integrity: sha512-gJvoZv0v8xCcKBcsxz1ZfXqoJ7sJJcyoKP8bUTjkuD4vDShLe0N26em4LQxitVv/2HLOpldQg67bEHB/qGoxJA==}
     engines: {node: 18.20.8 || ^20.3.0 || >=22.0.0, npm: '>=9.6.5', pnpm: '>=7.1.0'}
     hasBin: true
 
@@ -3688,12 +3688,12 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@astrojs/mdx@4.3.13(astro@5.16.8(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2))':
+  '@astrojs/mdx@4.3.13(astro@5.16.9(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2))':
     dependencies:
       '@astrojs/markdown-remark': 6.3.10
       '@mdx-js/mdx': 3.1.1
       acorn: 8.15.0
-      astro: 5.16.8(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2)
+      astro: 5.16.9(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2)
       es-module-lexer: 1.7.0
       estree-util-visit: 2.0.0
       hast-util-to-html: 9.0.5
@@ -3740,9 +3740,9 @@ snapshots:
       stream-replace-string: 2.0.0
       zod: 3.25.76
 
-  '@astrojs/tailwind@6.0.2(astro@5.16.8(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))(ts-node@10.9.2(@types/node@25.0.3)(typescript@5.9.3))':
+  '@astrojs/tailwind@6.0.2(astro@5.16.9(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2))(tailwindcss@3.4.19(yaml@2.8.2))(ts-node@10.9.2(@types/node@25.0.3)(typescript@5.9.3))':
     dependencies:
-      astro: 5.16.8(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2)
+      astro: 5.16.9(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2)
       autoprefixer: 10.4.23(postcss@8.5.6)
       postcss: 8.5.6
       postcss-load-config: 4.0.2(postcss@8.5.6)(ts-node@10.9.2(@types/node@25.0.3)(typescript@5.9.3))
@@ -4775,7 +4775,7 @@ snapshots:
 
   astring@1.9.0: {}
 
-  astro@5.16.8(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2):
+  astro@5.16.9(@types/node@25.0.3)(jiti@2.6.1)(rollup@4.55.1)(typescript@5.9.3)(yaml@2.8.2):
     dependencies:
       '@astrojs/compiler': 2.13.0
       '@astrojs/internal-helpers': 0.7.5
