@@ -1,6 +1,6 @@
 {
 	"main": "dist/_worker.js/index.js",
-	"name": "cyan-centauri",
+	"name": "portfolio",
   "compatibility_date": "2026-01-23",
   "compatibility_flags": [
     "nodejs_compat",
