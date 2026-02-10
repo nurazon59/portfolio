@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "deploy": "astro check && astro build &&  wrangler deploy --minify --env production --config wrangler.jsonc",
+    "deploy": "astro check && astro build &&  wrangler deploy --minify --config wrangler.jsonc",
     "preview": "astro preview",
     "astro": "astro",
     "format": "dprint fmt",
